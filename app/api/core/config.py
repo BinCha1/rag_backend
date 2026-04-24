@@ -22,3 +22,18 @@ DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NA
 
 # Embedding model configuration
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL")
+
+# LLM provider configuration
+LLM_PROVIDER = os.getenv("LLM_PROVIDER")  # default to Gemini if not set
+
+# Gemini specific configuration
+GEMINI_MODEL = os.getenv("GEMINI_MODEL")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+# Groq specific configuration
+GROQ_MODEL = os.getenv("GROQ_MODEL")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+# OpenAI specific configuration
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL")
